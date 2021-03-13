@@ -1,1 +1,1 @@
-web: java -Xmx384m -Xss512k -XX:+UseCompressedOops -jar target/*.jar --server.port=8080
+web: java $JAVA_OPTS -jar target/heroku-demo-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT
